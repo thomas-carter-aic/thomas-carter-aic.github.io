@@ -1,13 +1,71 @@
-# [Minimal Mistakes Jekyll theme](https://mmistakes.github.io/minimal-mistakes/)
+# Applied Innovation Corporation - Development Blog
 
 [![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/LICENSE)
 [![Jekyll](https://img.shields.io/badge/jekyll-%3E%3D%203.7-blue.svg)](https://jekyllrb.com/)
 
-Minimal Mistakes is a flexible two-column Jekyll theme, perfect for building personal sites, blogs, and portfolios. As the name implies, styling is purposely minimalistic to be enhanced and customized by you :smile:.
+This is a Jekyll site using the [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) theme, perfect for building personal sites, blogs, and portfolios.
+
+## GitHub Pages Setup
+
+This repository has been configured to work with GitHub Pages. Here's how to set it up:
+
+1. Make sure your repository is named `username.github.io` (where `username` is your GitHub username) for a user/organization site, or any name for a project site.
+
+2. Go to your repository's Settings > Pages:
+   - Source: Deploy from a branch
+   - Branch: gh-pages
+   - Folder: / (root)
+   - Click Save
+
+3. The GitHub Actions workflow will automatically build and deploy your site when you push changes to the main or master branch.
+
+4. Your site will be available at `https://username.github.io` for a user/organization site, or `https://username.github.io/repository-name` for a project site.
+
+## Local Development
+
+To set up your development environment:
+
+```bash
+# Install dependencies
+bundle install
+
+# Serve the site locally
+bundle exec jekyll serve
+```
+
+Your site will be available at `http://localhost:4000`.
+
+## Theme Information
+
+This site uses the Minimal Mistakes theme. As the name implies, styling is purposely minimalistic to be enhanced and customized by you.
 
 :sparkles: See what's new in the [CHANGELOG](CHANGELOG.md).
 
 **Note:** The theme uses the [jekyll-include-cache](https://github.com/benbalter/jekyll-include-cache) plugin which will need to be installed in your `Gemfile` and must be retained in the `plugins` array of `_config.yml`. Otherwise you'll encounter `Unknown tag 'include_cached'` errors at build.
+
+## License
+
+The MIT License (MIT)
+
+Copyright (c) 2013-2024 Michael Rose and contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
 [![Minimal Mistakes live preview][2]][1]
 
